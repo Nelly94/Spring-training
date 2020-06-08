@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.application" />
+
 
     <!-- bean definitions here -->
     <bean id="guitar" class="com.application.Guitar" />
 
-    <bean id="guitarist" class="com.application.Guitarist">
+    <!--<bean id="guitarist" class="com.application.Guitarist">
         <property name="instrument" ref="guitar"/>
         <constructor-arg index="0" ref="guitar"/>
-    </bean>
+    </bean>-->
 
 </beans>
