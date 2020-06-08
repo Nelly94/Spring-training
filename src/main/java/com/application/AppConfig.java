@@ -3,9 +3,11 @@ package com.application;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ComponentScan("com.application")
+@ImportResource("classpath:application-context.xml")
 public class AppConfig {
 
     @Bean

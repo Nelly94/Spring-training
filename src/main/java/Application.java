@@ -11,7 +11,7 @@ public class Application {
 
     public static void main(String[] args){
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application-context.xml");
+        //ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application-context.xml");
         AnnotationConfigApplicationContext conf = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Scanner sc = new Scanner(System.in);
