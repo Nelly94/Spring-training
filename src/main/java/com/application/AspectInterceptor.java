@@ -25,4 +25,9 @@ public class AspectInterceptor {
         //System.out.println(result);
         System.out.println("An instrument is being played");
     }
+
+    @Before("@annotation(com.application.MyAnnotation)")
+    public void beforeAnnotation(){
+        System.out.println("Hi from my annotation!");
+    }
 }

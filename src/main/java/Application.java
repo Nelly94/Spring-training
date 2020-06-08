@@ -1,4 +1,5 @@
 import com.application.AppConfig;
+import com.application.Guitar;
 import com.application.Guitarist;
 import com.application.IMusician;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,6 +21,7 @@ public class Application {
         if("pianist".equals(choice) || "guitarist".equals(choice)) {
             IMusician musician = (IMusician) conf.getBean(choice);
             musician.play();
+
         }else{
             System.out.println("Wrong musician...");
         }

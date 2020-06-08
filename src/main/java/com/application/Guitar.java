@@ -10,4 +10,9 @@ public class Guitar implements IInstrument{
     public String toString() {
         return "Guitar{}";
     }
+
+    @MyAnnotation
+    public void tune(){
+        System.out.println("Guitar tuned!");
+    }
 }

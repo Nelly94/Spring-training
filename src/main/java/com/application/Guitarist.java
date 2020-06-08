@@ -25,6 +25,7 @@ public class Guitarist implements IMusician{
     }
 
     public void play() {
+        ((Guitar)instrument).tune();
         System.out.println(instrument.toString());
     }
 }
