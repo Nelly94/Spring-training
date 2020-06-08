@@ -13,6 +13,6 @@ public class Guitarist implements IMusician{
     }
 
     public void play() {
-
+        System.out.println(instrument.toString());
     }
 }
