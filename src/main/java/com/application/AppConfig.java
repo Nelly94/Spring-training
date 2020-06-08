@@ -29,4 +29,9 @@ public class AppConfig {
     public IMusician pianist(){
         return new Pianist();
     }
+
+    @Bean
+    public AspectInterceptor aspectInterceptor(){
+        return new AspectInterceptor();
+    }
 }

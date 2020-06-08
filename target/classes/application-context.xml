@@ -17,6 +17,7 @@
         <constructor-arg index="0" ref="guitar"/>
     </bean>-->
 
+    <!--
     <bean id="aspectInterceptor" class="com.application.AspectInterceptor"></bean>
     <aop:config>
         <aop:pointcut id="serviceToStringPointCut" expression="execution(* com.application.*.toString(..))"/>
@@ -26,5 +27,6 @@
             <aop:after-returning method="interceptorToStringReturning" returning="result" pointcut-ref="serviceToStringPointCut"/>
         </aop:aspect>
     </aop:config>
-
+-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 </beans>
