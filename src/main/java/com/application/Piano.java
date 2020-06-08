@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("guitar")
-public class Guitar implements IInstrument{
+@Qualifier("piano")
+public class Piano implements IInstrument {
     @Override
     public String toString() {
-        return "Guitar{}";
+        return "Piano{}";
     }
 }

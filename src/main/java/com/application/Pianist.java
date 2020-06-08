@@ -5,16 +5,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("guitarist")
-public class Guitarist implements IMusician{
+@Qualifier("pianist")
+public class Pianist implements IMusician {
 
     @Autowired
-    @Qualifier("guitar")
+    @Qualifier("piano")
     private IInstrument instrument;
-
-    /*public Guitarist(IInstrument instrument) {
-        this.instrument = instrument;
-    }*/
 
     public IInstrument getInstrument() {
         return instrument;
@@ -24,6 +20,7 @@ public class Guitarist implements IMusician{
         this.instrument = instrument;
     }
 
+    @Override
     public void play() {
         System.out.println(instrument.toString());
     }
