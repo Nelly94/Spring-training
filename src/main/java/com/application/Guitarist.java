@@ -4,6 +4,10 @@ public class Guitarist implements IMusician{
 
     private IInstrument instrument;
 
+    public Guitarist(IInstrument instrument) {
+        this.instrument = instrument;
+    }
+
     public IInstrument getInstrument() {
         return instrument;
     }
